@@ -1,0 +1,14 @@
+<p>employee works!</p><br>
+{{title}}<br/>
+<!-- User Name: <input type="text" name="" id="userName" [(value)]="title" >  <br>
+<input type="button" value="Ok" (click)="fn1()"> <br>
+<input type="button" value="Get Employees" (click)="getEmployees()"><br>
+<li *ngFor="let e of employees"> <span *ngIf="e.title.length() &lt; 10"> {{e.title}} </span> </li> -->
+
+<form #form="ngForm">
+    Id: <input type="text" name="id" id="id" [(ngModel)]="employee.id">
+    User Name : <input type="text" name="" id="userName" name="userName" ngModel><br>
+    Password : <input type="password" name="" id="password" name="password" ngModel><br>
+    <button (click)="fn1()">Submit</button>
+
+</form>
